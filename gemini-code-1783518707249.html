@@ -12,6 +12,7 @@
             --light: #f9fafb;
             --white: #ffffff;
             --gray: #6b7280;
+            --accent-green: #10b981;
         }
         * {
             margin: 0;
@@ -37,6 +38,7 @@
             color: var(--secondary);
         }
         .hero {
+            /* Hero Image: African American construction project leadership */
             background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
@@ -69,12 +71,34 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         .mission-box p {
             margin-bottom: 1.2rem;
             font-size: 1.05rem;
             color: #4b5563;
+        }
+        .donation-banner {
+            background-color: #eff6ff;
+            border-left: 5px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .donation-text h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+        .donation-text p {
+            color: #4b5563;
+            font-size: 0.95rem;
         }
         .gallery-grid {
             display: grid;
@@ -139,6 +163,17 @@
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #d97706;
+        }
+        .btn-donate {
+            background-color: var(--accent-green);
+            color: var(--white);
+        }
+        .btn-donate:hover {
+            background-color: #059669;
         }
     </style>
 </head>
@@ -164,18 +199,31 @@
             <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity[cite: 5].</p>
         </div>
 
+        <!-- Donation Section -->
+        <div class="donation-banner">
+            <div class="donation-text">
+                <h4>Support the Workforce Training Campus</h4>
+                <p>Your tax-deductible contribution directly funds hands-on training tools, equipment, and resources for our students.</p>
+            </div>
+            <!-- NOTE: Swap out the "#" with your actual PayPal / Stripe URL when ready -->
+            <a href="#" target="_blank" class="btn btn-donate">Make a Donation</a>
+        </div>
+
         <h2 class="section-title">Skilled Training Focus</h2>
         <div class="gallery-grid">
+            <!-- Focus Image 1: African American Construction Site Prep Planning -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Professional Planning Site Prep">
                 <div class="gallery-caption">Site Prep & Infrastructure[cite: 5]</div>
             </div>
+            <!-- Focus Image 2: Diverse Project Supervision and Architectural Collaboration -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="African American Skilled Trade Engineering Management">
                 <div class="gallery-caption">Construction Management[cite: 5]</div>
             </div>
+            <!-- Focus Image 3: Structural Trade Execution -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=600&auto=format&fit=crop" alt="Skilled Construction Work Execution">
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="African American Technician Executing Technical Build Tasks">
                 <div class="gallery-caption">Ground-Up Completion[cite: 5]</div>
             </div>
         </div>
@@ -194,7 +242,7 @@
                 <h3>Corporate Framework[cite: 1]</h3>
                 <ul>
                     <li><span>Structure</span> <strong>Public Benefit Corporation[cite: 1]</strong></li>
-                    <li><span>Location</span> <strong>South Carolina, USA[cite: 1]</strong></li>
+                    <li><span>Location</span> <strong>SC, USA[cite: 1]</strong></li>
                     <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose[cite: 1]</strong></li>
                 </ul>
             </div>
@@ -203,7 +251,8 @@
     </div>
 
     <footer>
-        <p><strong>Inclusive Sovereignty Inc.</strong><br>513 Azalee Grands Pl, Moncks Corner, South Carolina 29461[cite: 1]</p>
+        <!-- Modified to protect privacy: Showing City, State, and Zip Code only -->
+        <p><strong>Inclusive Sovereignty Inc.</strong><br>Moncks Corner, SC 29461[cite: 1]</p>
         <p style="margin-top: 1rem; color: #4b5563;">&copy; 2026 Organized exclusively for charitable and educational purposes[cite: 1].</p>
     </footer>
 
