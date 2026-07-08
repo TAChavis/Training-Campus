@@ -1,4 +1,4 @@
-[gemini-code-1783518707249.html](https://github.com/user-attachments/files/29804594/gemini-code-1783518707249.html)
+(https://github.com/user-attachments/files/29804594/gemini-code-1783518707249.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
