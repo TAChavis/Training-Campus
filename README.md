@@ -37,6 +37,7 @@
             color: var(--secondary);
         }
         .hero {
+            /* Main Hero Image: African American construction project leadership */
             background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
@@ -166,16 +167,19 @@
 
         <h2 class="section-title">Skilled Training Focus</h2>
         <div class="gallery-grid">
+            <!-- Training Image 1: Site Prep & Infrastructure Plan Review -->
             <div class="gallery-item">
                 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
                 <div class="gallery-caption">Site Prep & Infrastructure[cite: 5]</div>
             </div>
+            <!-- Training Image 2: Diverse Project Supervision and Blueprint Checkups -->
             <div class="gallery-item">
                 <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
                 <div class="gallery-caption">Construction Management[cite: 5]</div>
             </div>
+            <!-- Training Image 3: Structural Execution on Site -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=600&auto=format&fit=crop" alt="Skilled Construction Work Execution">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="Skilled Construction Work Execution">
                 <div class="gallery-caption">Ground-Up Completion[cite: 5]</div>
             </div>
         </div>
