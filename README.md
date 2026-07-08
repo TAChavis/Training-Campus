@@ -37,8 +37,8 @@
             color: var(--secondary);
         }
         .hero {
-            /* Main Hero Image: African American construction project leadership */
-            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+            /* Updated image link to feature an African American construction professional on a job site */
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(30, 58, 138, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
             text-align: center;
@@ -165,21 +165,18 @@
             <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity[cite: 5].</p>
         </div>
 
-        <h2 class="section-title">Skilled Training Focus</h2>
+        <h2 class="section-title">Training Focus</h2>
         <div class="gallery-grid">
-            <!-- Training Image 1: Site Prep & Infrastructure Plan Review -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
+                <img src="https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=600&auto=format&fit=crop" alt="Infrastructure Prep">
                 <div class="gallery-caption">Site Prep & Infrastructure[cite: 5]</div>
             </div>
-            <!-- Training Image 2: Diverse Project Supervision and Blueprint Checkups -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="Management">
                 <div class="gallery-caption">Construction Management[cite: 5]</div>
             </div>
-            <!-- Training Image 3: Structural Execution on Site -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="Skilled Construction Work Execution">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="Carpentry">
                 <div class="gallery-caption">Ground-Up Completion[cite: 5]</div>
             </div>
         </div>
