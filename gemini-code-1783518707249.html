@@ -38,8 +38,8 @@
             color: var(--secondary);
         }
         .hero {
-            /* NEW HERO IMAGE: African American construction professional on site */
-            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+            /* Hero Image: African American construction project leadership */
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
             text-align: center;
@@ -205,22 +205,25 @@
                 <h4>Support the Workforce Training Campus</h4>
                 <p>Your tax-deductible contribution directly funds hands-on training tools, equipment, and resources for our students.</p>
             </div>
+            <!-- NOTE: Swap out the "#" with your actual PayPal / Stripe URL when ready -->
             <a href="#" target="_blank" class="btn btn-donate">Make a Donation</a>
         </div>
 
         <h2 class="section-title">Skilled Training Focus</h2>
         <div class="gallery-grid">
+            <!-- Focus Image 1: African American Construction Site Prep Planning -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Professional Planning Site Prep">
                 <div class="gallery-caption">Site Prep & Infrastructure[cite: 5]</div>
             </div>
+            <!-- Focus Image 2: Diverse Project Supervision and Architectural Collaboration -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="African American Skilled Trade Engineering Management">
                 <div class="gallery-caption">Construction Management[cite: 5]</div>
             </div>
+            <!-- Focus Image 3: Structural Trade Execution -->
             <div class="gallery-item">
-                <!-- NEW REPLACEMENT IMAGE: High quality African American skilled construction worker -->
-                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="African American Technical Professional Executing Ground-Up Build Features">
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="African American Technician Executing Technical Build Tasks">
                 <div class="gallery-caption">Ground-Up Completion[cite: 5]</div>
             </div>
         </div>
@@ -239,7 +242,7 @@
                 <h3>Corporate Framework[cite: 1]</h3>
                 <ul>
                     <li><span>Structure</span> <strong>Public Benefit Corporation[cite: 1]</strong></li>
-                    <li><span>Location</span> <strong>Moncks Corner, SC[cite: 1]</strong></li>
+                    <li><span>Location</span> <strong>SC, USA[cite: 1]</strong></li>
                     <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose[cite: 1]</strong></li>
                 </ul>
             </div>
@@ -248,6 +251,7 @@
     </div>
 
     <footer>
+        <!-- Modified to protect privacy: Showing City, State, and Zip Code only -->
         <p><strong>Inclusive Sovereignty Inc.</strong><br>Moncks Corner, SC 29461[cite: 1]</p>
         <p style="margin-top: 1rem; color: #4b5563;">&copy; 2026 Organized exclusively for charitable and educational purposes[cite: 1].</p>
     </footer>
