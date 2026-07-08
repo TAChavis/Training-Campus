@@ -12,6 +12,7 @@
             --light: #f9fafb;
             --white: #ffffff;
             --gray: #6b7280;
+            --accent-green: #10b981;
         }
         * {
             margin: 0;
@@ -37,8 +38,7 @@
             color: var(--secondary);
         }
         .hero {
-            /* Updated background image link featuring African American skilled trades professionals */
-            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
             text-align: center;
@@ -70,12 +70,34 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         .mission-box p {
             margin-bottom: 1.2rem;
             font-size: 1.05rem;
             color: #4b5563;
+        }
+        .donation-banner {
+            background-color: #eff6ff;
+            border-left: 5px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .donation-text h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+        .donation-text p {
+            color: #4b5563;
+            font-size: 0.95rem;
         }
         .gallery-grid {
             display: grid;
@@ -140,6 +162,17 @@
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #d97706;
+        }
+        .btn-donate {
+            background-color: var(--accent-green);
+            color: var(--white);
+        }
+        .btn-donate:hover {
+            background-color: #059669;
         }
     </style>
 </head>
@@ -163,6 +196,14 @@
             <p>Drawing upon decades of professional experience in construction management, project supervision, safety compliance, quality control, and workforce leadership, Inclusive Sovereignty Inc. prepares participants with industry-recognized skills, practical experience, and mentorship that lead to sustainable careers, entrepreneurship, and financial self-sufficiency.</p>
             <p>We believe every individual deserves the opportunity to learn a valuable trade, earn a living wage, and contribute to the revitalization of their community. Through strategic partnerships, responsible land development, and comprehensive workforce training, Inclusive Sovereignty Inc. seeks to reduce barriers to employment, strengthen the skilled labor force, and create lasting economic opportunities for underserved communities.</p>
             <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity.</p>
+        </div>
+
+        <div class="donation-banner">
+            <div class="donation-text">
+                <h4>Support the Workforce Training Campus</h4>
+                <p>Your tax-deductible contribution directly funds hands-on training tools, equipment, and resources for our students.</p>
+            </div>
+            <a href="#" target="_blank" class="btn btn-donate">Make a Donation</a>
         </div>
 
         <h2 class="section-title">Skilled Training Focus</h2>
