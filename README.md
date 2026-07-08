@@ -5,436 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inclusive Sovereignty Inc.</title>
     <style>
-        /* Modern Reset and CSS Variables */
         :root {
-            --primary: #1e3a8a; /* Deep Trust Blue */
-            --secondary: #f59e0b; /* Construction Gold/Amber */
+            --primary: #1e3a8a;
+            --secondary: #f59e0b;
             --dark: #1f2937;
             --light: #f9fafb;
             --white: #ffffff;
             --gray: #6b7280;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
         }
-
         body {
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
         }
-
-        /* Header & Navigation */
         header {
             background-color: var(--primary);
             color: var(--white);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .logo span {
-            color: var(--secondary);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 1.5rem;
-        }
-
-        nav ul li a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(31, 41, 55, 0.9)), url('path_to_your_image.jpg') no-repeat center center/cover;
-            color: var(--white);
-            padding: 8rem 2rem;
+            padding: 1.5rem;
             text-align: center;
         }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
+        header h1 {
+            font-size: 1.8rem;
         }
-
+        header span {
+            color: var(--secondary);
+        }
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+            color: var(--white);
+            padding: 6rem 1.5rem;
+            text-align: center;
+        }
         .hero h2 {
-            font-size: 3rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
-            line-height: 1.2;
         }
-
         .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            color: #e5e7eb;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.1rem;
         }
-
-        .btn {
-            background-color: var(--secondary);
-            color: var(--dark);
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 4px solid var(--secondary);
+            padding-bottom: 0.5rem;
             display: inline-block;
         }
-
-        .btn:hover {
-            background-color: #d97706;
-            transform: translateY(-2px);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        section {
-            margin-bottom: 5rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 4px;
-            background-color: var(--secondary);
-        }
-
-        /* Mission Section */
         .mission-box {
-            background-color: var(--white);
-            padding: 2.5rem;
+            background: var(--white);
+            padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--secondary);
+            margin-bottom: 3rem;
         }
-
         .mission-box p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
             color: #4b5563;
         }
-
-        .mission-box p:last-child {
-            margin-bottom: 0;
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        /* Gallery Grid (Facebook Images) */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin-bottom: 3rem;
         }
-
         .gallery-item {
-            background-color: var(--white);
+            background: var(--white);
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
         }
-
-        .gallery-item:hover {
-            transform: scale(1.02);
-        }
-
         .gallery-item img {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
-            display: block;
-            background-color: #e5e7eb; /* Placeholder if image loads slow */
         }
-
         .gallery-caption {
             padding: 1rem;
-            font-size: 0.95rem;
-            color: var(--gray);
+            font-weight: bold;
+            color: var(--primary);
             text-align: center;
-            border-top: 1px solid #f3f4f6;
         }
-
-        /* Leadership & Structure */
         .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
         }
-
         .card {
-            background-color: var(--white);
-            padding: 2rem;
+            background: var(--white);
+            padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-
-        .card ul {
-            list-style-type: none;
-            margin-top: 1rem;
-        }
-
-        .card ul li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f3f4f6;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .card ul li:last-child {
-            border-bottom: none;
-        }
-
-        .badge {
-            background-color: #eff6ff;
-            color: var(--primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: #9ca3af;
-            padding: 3rem 2rem;
-            font-size: 0.9rem;
-            border-top: 4px solid var(--primary);
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .footer-info h3 {
-            color: var(--white);
+        .card h3 {
             margin-bottom: 1rem;
+            color: var(--primary);
         }
-
-        .footer-links ul {
+        .card ul {
             list-style: none;
         }
-
-        .footer-links ul li {
-            margin-bottom: 0.5rem;
+        .card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
         }
-
-        .footer-links ul li a {
+        footer {
+            background-color: #111827;
             color: #9ca3af;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links ul li a:hover {
-            color: var(--white);
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 2rem auto 0 auto;
-            padding-top: 1.5rem;
-            border-top: 1px solid #374151;
+            padding: 3rem 1.5rem;
             text-align: center;
+            margin-top: 4rem;
+            font-size: 0.9rem;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
+        .btn {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
     <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>INCLUSIVE <span>SOVEREIGNTY</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">Our Mission</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#governance">Leadership</a></li>
-                    <li><a href="https://www.facebook.com/share/1BXszzsm5F/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>INCLUSIVE <span>SOVEREIGNTY INC.</span></h1>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Building Pathways to Economic Independence</h2>
-            <p>Empowering adults and youth through hands-on skilled trades education, workforce development, and community investment.</p>
-            <a href="#about" class="btn">Learn More About Our Campus</a>
-        </div>
+        <h2>Pathways to Economic Independence</h2>
+        <p>Empowering adults and youth through hands-on skilled trades education, workforce development, and community investment.</p>
+        <a href="https://www.facebook.com/share/1BXszzsm5F/?mibextid=wwXIfr" target="_blank" class="btn">Visit Our Facebook Page</a>
     </section>
 
-    <!-- Main Content Container -->
     <div class="container">
+        
+        <h2 class="section-title">Our Mission</h2>
+        <div class="mission-box">
+            <p>Inclusive Sovereignty Inc. is dedicated to building stronger communities by creating pathways to economic independence through skilled trades education, workforce development, and community investment[cite: 5]. Our mission is to acquire and develop land that serves as a hands-on training campus where adults and young people can learn residential and commercial construction from the ground up—from site preparation and infrastructure to the completion of quality homes and facilities[cite: 5].</p>
+            <p>Drawing upon decades of professional experience in construction management, project supervision, safety compliance, quality control, and workforce leadership, Inclusive Sovereignty Inc. prepares participants with industry-recognized skills, practical experience, and mentorship that lead to sustainable careers, entrepreneurship, and financial self-sufficiency[cite: 5].</p>
+            <p>We believe every individual deserves the opportunity to learn a valuable trade, earn a living wage, and contribute to the revitalization of their community[cite: 5]. Through strategic partnerships, responsible land development, and comprehensive workforce training, Inclusive Sovereignty Inc. seeks to reduce barriers to employment, strengthen the skilled labor force, and create lasting economic opportunities for underserved communities[cite: 5].</p>
+            <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity[cite: 5].</p>
+        </div>
 
-        <!-- Mission Statement Section -->
-        <section id="about">
-            <h2 class="section-title">Our Mission & Purpose</h2>
-            <div class="mission-box">
-                <p>Inclusive Sovereignty Inc. is dedicated to building stronger communities by creating pathways to economic independence through skilled trades education, workforce development, and community investment. Our mission is to acquire and develop land that serves as a hands-on training campus where adults and young people can learn residential and commercial construction from the ground up—from site preparation and infrastructure to the completion of quality homes and facilities.</p>
-                <p>Drawing upon decades of professional experience in construction management, project supervision, safety compliance, quality control, and workforce leadership, Inclusive Sovereignty Inc. prepares participants with industry-recognized skills, practical experience, and mentorship that lead to sustainable careers, entrepreneurship, and financial self-sufficiency.</p>
-                <p>We believe every individual deserves the opportunity to learn a valuable trade, earn a living wage, and contribute to the revitalization of their community. Through strategic partnerships, responsible land development, and comprehensive workforce training, Inclusive Sovereignty Inc. seeks to reduce barriers to employment, strengthen the skilled labor force, and create lasting economic opportunities for underserved communities.</p>
-                <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity.</p>
+        <h2 class="section-title">Skilled Training Focus</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
+                <div class="gallery-caption">Site Prep & Infrastructure[cite: 5]</div>
             </div>
-        </section>
-
-        <!-- Gallery Section for Facebook Images -->
-        <section id="gallery">
-            <h2 class="section-title">Campus & Program Gallery</h2>
-            <p style="color: var(--gray); margin-bottom: 1.5rem;">A glimpse into our community development, training initiatives, and community impact.</p>
-            <div class="gallery-grid">
-                
-                <!-- Image 1 -->
-                <div class="gallery-item">
-                    <img src="path_to_your_image1.jpg" alt="Inclusive Sovereignty Community Work 1">
-                    <div class="gallery-caption">Hands-on Training & Infrastructure Development</div>
-                </div>
-
-                <!-- Image 2 -->
-                <div class="gallery-item">
-                    <img src="path_to_your_image2.jpg" alt="Inclusive Sovereignty Community Work 2">
-                    <div class="gallery-caption">Building Stronger Foundations for Our Future</div>
-                </div>
-
-                <!-- Image 3 -->
-                <div class="gallery-item">
-                    <img src="path_to_your_image3.jpg" alt="Inclusive Sovereignty Community Work 3">
-                    <div class="gallery-caption">Workforce Leadership & Sustainable Careers</div>
-                </div>
-
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
+                <div class="gallery-caption">Construction Management[cite: 5]</div>
             </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://www.facebook.com/share/1BXszzsm5F/?mibextid=wwXIfr" target="_blank" class="btn" style="background-color: transparent; border: 2px solid var(--primary); color: var(--primary);">View Full Gallery on Facebook</a>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1541457521508-b3f1c6db94e0?q=80&w=600&auto=format&fit=crop" alt="Skilled Construction Work Execution">
+                <div class="gallery-caption">Ground-Up Completion[cite: 5]</div>
             </div>
-        </section>
+        </div>
 
-        <!-- Governance & Organizational Details -->
-        <section id="governance">
-            <h2 class="section-title">Organizational Structure</h2>
-            <div class="grid-2">
-                
-                <!-- Board of Directors -->
-                <div class="card">
-                    <h3>Leadership & Board</h3>
-                    <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 1rem;">The dedicated individuals steering our mission forward.</p>
-                    <ul>
-                        <li><span>Todd A. Chavis II</span> <span class="badge">President & Director</span></li>
-                        <li><span>Lakeya R. Chavis</span> <span class="badge">Secretary</span></li>
-                        <li><span>Anthony Moultrie</span> <span class="badge">Director</span></li>
-                        <li><span>Tywillie Chavis</span> <span class="badge">Director</span></li>
-                    </ul>
-                </div>
-
-                <!-- Entity Information -->
-                <div class="card">
-                    <h3>Corporate Foundation</h3>
-                    <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 1rem;">Legally organized exclusively for public benefit and charitable purposes.</p>
-                    <ul>
-                        <li><span>Entity Type</span> <strong>Public Benefit Corporation</strong></li>
-                        <li><span>State of Incorporation</span> <strong>South Carolina</strong></li>
-                        <li><span>IRS Status Filed</span> <strong>501(c)(3) Charitable Purpose</strong></li>
-                        <li><span>Focus Areas</span> <strong>Trades Education & Workforce Development</strong></li>
-                    </ul>
-                </div>
-
+        <div class="grid-2">
+            <div class="card">
+                <h3>Executive Leadership[cite: 2, 3]</h3>
+                <ul>
+                    <li><span>Todd Chavis</span> <strong>President & Director[cite: 2, 3]</strong></li>
+                    <li><span>Lakeya R. Chavis</span> <strong>Secretary[cite: 2]</strong></li>
+                    <li><span>Anthony Moultrie</span> <strong>Director[cite: 1]</strong></li>
+                    <li><span>Tywillie Chavis</span> <strong>Director[cite: 1]</strong></li>
+                </ul>
             </div>
-        </section>
+            <div class="card">
+                <h3>Corporate Framework[cite: 1]</h3>
+                <ul>
+                    <li><span>Structure</span> <strong>Public Benefit Corporation[cite: 1]</strong></li>
+                    <li><span>Location</span> <strong>South Carolina, USA[cite: 1]</strong></li>
+                    <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose[cite: 1]</strong></li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>Inclusive Sovereignty Inc.</h3>
-                <p>Principal Office:<br>513 Azalee Grands Pl<br>Moncks Corner, South Carolina 29461</p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">Our Mission</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#governance">Our Structure</a></li>
-                    <li><a href="https://www.facebook.com/share/1BXszzsm5F/?mibextid=wwXIfr" target="_blank">Follow Us on Facebook</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Inclusive Sovereignty Inc. Organized and operated exclusively for charitable and educational purposes under Section 501(c)(3).</p>
-        </div>
+        <p><strong>Inclusive Sovereignty Inc.</strong><br>513 Azalee Grands Pl, Moncks Corner, South Carolina 29461[cite: 1]</p>
+        <p style="margin-top: 1rem; color: #4b5563;">&copy; 2026 Organized exclusively for charitable and educational purposes[cite: 1].</p>
     </footer>
 
 </body>
