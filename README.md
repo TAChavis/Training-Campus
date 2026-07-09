@@ -203,7 +203,8 @@
                 <h4>Support the Workforce Training Campus</h4>
                 <p>Your tax-deductible contribution directly funds hands-on training tools, equipment, and resources for our students.</p>
             </div>
-            <a href="#" target="_blank" class="btn btn-donate">Make a Donation</a>
+            <!-- PayPal Link Integrated Below -->
+            <a href="https://www.paypal.com/ncp/payment/6LTBWH4TUVJYJ" target="_blank" class="btn btn-donate">Make a Donation</a>
         </div>
 
         <h2 class="section-title">Skilled Training Focus</h2>
