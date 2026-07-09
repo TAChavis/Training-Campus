@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inclusive Sovereignty Inc.</title>
+    
+    <!-- PayPal SDK Script Added Here -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA_x2uzVfOe-pL9f8EBeHVcE9ZkdLqm7uA77VlbWcVh-kl8x3_Pf9yjTngf2OVRE_Np1kP8SCNnrp8iuw&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+    
     <style>
         :root {
             --primary: #1e3a8a;
@@ -37,7 +42,6 @@
             color: var(--secondary);
         }
         .hero {
-            /* Hero background image optimized to feature African American construction leadership */
             background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             color: var(--white);
             padding: 6rem 1.5rem;
