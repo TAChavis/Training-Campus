@@ -11,10 +11,12 @@
             --primary: #1e3a8a;
             --secondary: #f59e0b;
             --dark: #1f2937;
-            --light: #f9fafb;
+            --light: #f3f4f6;
             --white: #ffffff;
             --gray: #6b7280;
             --accent-green: #10b981;
+            --card-gradient-1: linear-gradient(135deg, #fdf8ee 0%, #fef3c7 100%);
+            --card-gradient-2: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
         }
         * {
             margin: 0;
@@ -71,8 +73,9 @@
             background: var(--white);
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
+            border-top: 4px solid var(--primary);
         }
         .mission-box p {
             margin-bottom: 1.2rem;
@@ -90,7 +93,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         .donation-text h4 {
             color: var(--primary);
@@ -102,14 +105,14 @@
             font-size: 0.95rem;
         }
         .paypal-direct-link {
-            color: var(--accent-green);
+            color: var(--primary);
             font-weight: bold;
             text-decoration: underline;
             font-size: 1.05rem;
             transition: color 0.2s ease;
         }
         .paypal-direct-link:hover {
-            color: #059669;
+            color: var(--secondary);
         }
         .gallery-grid {
             display: grid;
@@ -122,6 +125,10 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
         }
         .gallery-item img {
             width: 100%;
@@ -138,25 +145,83 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 3rem;
         }
         .card {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .card-leadership {
+            background: var(--card-gradient-1);
+            border-left: 6px solid var(--secondary);
+        }
+        .card-framework {
+            background: var(--card-gradient-2);
+            border-left: 6px solid var(--primary);
         }
         .card h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             color: var(--primary);
+            font-size: 1.4rem;
         }
         .card ul {
             list-style: none;
+            margin-bottom: 1.5rem;
         }
         .card ul li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #e5e7eb;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        .card ul li span {
+            font-weight: 600;
+        }
+        .history-section {
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+            scroll-margin-top: 20px;
+        }
+        .history-profile {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .history-profile:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .history-profile h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.25rem;
+        }
+        .history-profile .title {
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        p.bio-text {
+            color: #4b5563;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
         }
         footer {
             background-color: #111827;
@@ -174,10 +239,22 @@
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
-            transition: background 0.2s ease;
+            transition: background 0.2s ease, transform 0.2s ease;
+            text-align: center;
         }
         .btn:hover {
             background-color: #d97706;
+        }
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 6px;
+            align-self: flex-start;
+        }
+        .btn-sm:hover {
+            background-color: #1d4ed8;
         }
     </style>
 </head>
@@ -228,22 +305,46 @@
         </div>
 
         <div class="grid-2">
-            <div class="card">
-                <h3>Executive Leadership</h3>
-                <ul>
-                    <li><span>Todd Chavis</span> <strong>President & Director</strong></li>
-                    <li><span>Lakeya R. Chavis</span> <strong>Secretary</strong></li>
-                    <li><span>Anthony Moultrie</span> <strong>Director</strong></li>
-                    <li><span>Tywillie Chavis</span> <strong>Director</strong></li>
-                </ul>
+            <div class="card card-leadership">
+                <div>
+                    <h3>Executive Leadership</h3>
+                    <ul>
+                        <li><span>Todd Chavis</span> <strong>President & Director</strong></li>
+                        <li><span>Lakeya R. Chavis</span> <strong>Secretary</strong></li>
+                        <li><span>Anthony Moultrie</span> <strong>Director</strong></li>
+                        <li><span>Tywillie Chavis</span> <strong>Director</strong></li>
+                    </ul>
+                </div>
+                <a href="#leadership-history" class="btn btn-sm">View Leadership Backgrounds &rarr;</a>
             </div>
-            <div class="card">
-                <h3>Corporate Framework</h3>
-                <ul>
-                    <li><span>Structure</span> <strong>Public Benefit Corporation</strong></li>
-                    <li><span>Location</span> <strong>Moncks Corner, SC</strong></li>
-                    <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose</strong></li>
-                </ul>
+            
+            <div class="card card-framework">
+                <div>
+                    <h3>Corporate Framework</h3>
+                    <ul>
+                        <li><span>Structure</span> <strong>Public Benefit Corporation</strong></li>
+                        <li><span>Location</span> <strong>Moncks Corner, SC</strong></li>
+                        <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="leadership-history" class="history-section">
+            <h2 class="section-title">Leadership Background & History</h2>
+            
+            <div class="history-profile">
+                <h3>Todd Chavis</h3>
+                <div class="title">President & Director</div>
+                <p class="bio-text">Todd Chavis brings decades of professional, field-tested experience in construction management, large-scale project supervision, and quality control systems. Throughout his career, Todd has established a robust track record of guiding builds from raw site preparation and essential infrastructure layout straight through to ground-up structural completion.</p>
+                <p class="bio-text">Dedicated to safety compliance and high-caliber team leadership, he envisions Inclusive Sovereignty Inc. as a direct vessel for community enrichment. By utilizing his extensive industry insights, Todd designs hands-on mentorship structures that transform the training campus into a powerhouse for student career pipelines and lasting economic self-reliance.</p>
+            </div>
+
+            <div class="history-profile">
+                <h3>Lakeya R. Chavis</h3>
+                <div class="title">Corporate Secretary</div>
+                <p class="bio-text">Lakeya R. Chavis anchors the executive leadership group with an extensive background in organizational administration, compliance systems, and corporate communications. Her oversight guarantees seamless strategic operations across all organizational divisions, managing crucial legal, clerical, and corporate frameworks.</p>
+                <p class="bio-text">Deeply invested in community revitalization, Lakeya channels her organizational strengths toward forging long-term community relationships, building strategic public benefit partnerships, and managing regional workforce outreach initiatives to reduce barriers to entry for underserved groups.</p>
             </div>
         </div>
 
