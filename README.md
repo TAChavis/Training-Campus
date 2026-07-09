@@ -138,4 +138,122 @@
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .card ul {
+            list-style: none;
+        }
+        .card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: #111827;
+            color: #9ca3af;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+        .btn {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #d97706;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>INCLUSIVE <span>SOVEREIGNTY INC.</span></h1>
+    </header>
+
+    <section class="hero">
+        <h2>Pathways to Economic Independence</h2>
+        <p>Empowering adults and youth through hands-on skilled trades education, workforce development, and community investment.</p>
+        <a href="https://www.facebook.com/share/1BXszzsm5F/?mibextid=wwXIfr" target="_blank" class="btn">Visit Our Facebook Page</a>
+    </section>
+
+    <div class="container">
+        
+        <h2 class="section-title">Our Mission</h2>
+        <div class="mission-box">
+            <p>Inclusive Sovereignty Inc. is dedicated to building stronger communities by creating pathways to economic independence through skilled trades education, workforce development, and community investment. Our mission is to acquire and develop land that serves as a hands-on training campus where adults and young people can learn residential and commercial construction from the ground up—from site preparation and infrastructure to the completion of quality homes and facilities.</p>
+            <p>Drawing upon decades of professional experience in construction management, project supervision, safety compliance, quality control, and workforce leadership, Inclusive Sovereignty Inc. prepares participants with industry-recognized skills, practical experience, and mentorship that lead to sustainable careers, entrepreneurship, and financial self-sufficiency.</p>
+            <p>We believe every individual deserves the opportunity to learn a valuable trade, earn a living wage, and contribute to the revitalization of their community. Through strategic partnerships, responsible land development, and comprehensive workforce training, Inclusive Sovereignty Inc. seeks to reduce barriers to employment, strengthen the skilled labor force, and create lasting economic opportunities for underserved communities.</p>
+            <p><strong>Our Vision:</strong> To develop a model training community where education, employment, housing, and community development work together to empower future generations and build a legacy of opportunity, self-reliance, and inclusive prosperity.</p>
+        </div>
+
+        <div class="donation-banner">
+            <div class="donation-text">
+                <h4>Support the Workforce Training Campus</h4>
+                <p>Your tax-deductible contribution directly funds hands-on training tools, equipment, and resources for our students.</p>
+            </div>
+            <a href="https://www.paypal.com/ncp/payment/6LTBWH4TUVJYJ" target="_blank" class="paypal-direct-link">https://www.paypal.com/ncp/payment/6LTBWH4TUVJYJ</a>
+        </div>
+
+        <h2 class="section-title">Skilled Training Focus</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="African American Construction Manager Planning Site Prep">
+                <div class="gallery-caption">Site Prep & Infrastructure</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Minority Skilled Trade Engineering Collaboration">
+                <div class="gallery-caption">Construction Management</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="African American Technical Professional Executing Ground-Up Build Features">
+                <div class="gallery-caption">Ground-Up Completion</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>Executive Leadership</h3>
+                <ul>
+                    <li><span>Todd Chavis</span> <strong>President & Director</strong></li>
+                    <li><span>Lakeya R. Chavis</span> <strong>Secretary</strong></li>
+                    <li><span>Anthony Moultrie</span> <strong>Director</strong></li>
+                    <li><span>Tywillie Chavis</span> <strong>Director</strong></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Corporate Framework</h3>
+                <ul>
+                    <li><span>Structure</span> <strong>Public Benefit Corporation</strong></li>
+                    <li><span>Location</span> <strong>Moncks Corner, SC</strong></li>
+                    <li><span>IRS Focus</span> <strong>Charitable 501(c)(3) Purpose</strong></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>Inclusive Sovereignty Inc.</strong><br>Moncks Corner, SC 29461</p>
+        <p style="margin-top: 1rem; color: #4b5563;">&copy; 2026 Organized exclusively for charitable and educational purposes.</p>
+    </footer>
+
+</body>
+</html>
